@@ -25,9 +25,9 @@ jobs:
           cache: maven
 
       - name: Build with Maven
-        working-directory: backend
+        working-directory: EmployeeManagementSystem
         run: mvn clean install -DskipTests
 
       - name: Run Tests
-        working-directory: backend
+        working-directory: EmployeeManagementSystem
         run: mvn test
